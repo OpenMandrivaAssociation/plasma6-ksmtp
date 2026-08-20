@@ -6,7 +6,7 @@
 %define devname %mklibname KPim6SMTP -d
 
 Name: ksmtp
-Version:	26.04.3
+Version:	26.08.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -27,7 +27,7 @@ BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF6KCMUtils)
 BuildRequires: cmake(KPim6Akonadi)
 BuildRequires: cmake(KPim6AkonadiMime)
-BuildRequires: cmake(KPim6Mime)
+BuildRequires: cmake(KF6Mime)
 BuildRequires: cmake(KF6Completion)
 BuildRequires: cmake(KF6Config)
 BuildRequires: cmake(KF6ConfigWidgets)
